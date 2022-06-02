@@ -1,0 +1,144 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS DE HEADER */
+header {
+    background-color: rgb(225, 238, 155);
+    border: solid 5px rgb(150, 106, 12);
+    margin: 0 0 0 6px;
+    background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+header h1 {
+    margin: 15px;
+    color: rgb(112, 63, 27);
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+header nav {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+header nav ul li {
+    margin: 30px 0;
+    padding: 5px;
+    border: outset 4px rgb(247, 197, 91);
+    border-radius: 10px;
+}
+.navegador-header {
+    display: flex;
+    justify-content: center;
+    column-gap: 3.6em;
+}
+header nav li:hover {
+    background-color: rgb(226, 192, 117);
+}
+
+/* ESTILOS DE MAINS*/
+
+main {
+    border-left: solid 5px rgb(150, 106, 12);
+    border-right: solid 5px rgb(150, 106, 12);
+    margin: 0 0 0 6px;
+    padding: 40px 0;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/sun-pattern.png); 
+}
+.nosotros{
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+}
+.DescripcionProductos {
+    border: solid 2px rgb(150, 106, 12);
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Smooch', cursive;
+    font-weight: bold;
+}
+.productos {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: solid 4px rgb(150, 106, 12);
+    border-radius: 4px;
+    height: 550px;
+    width: 500px;
+}
+.productos img {
+    height: 400px;
+    width: 300px;
+}
+.PreciosProductos {
+    border: solid 2px rgb(150, 106, 12);
+    margin: 10px 0;
+    padding: 5px;
+}
+#imagen-Main-Clientes {
+    height: 400px;
+    width: 600px;
+}
+ /*ESTILOS DE MAIN-PAGES*/
+
+/*ESTILOS FOOTER  */
+footer {
+    height: 150px;
+    border: solid 5px rgb(150, 106, 12);
+    margin: 0 0 0 6px;
+    background-color: rgb(225, 238, 155);
+    background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 3.6em;
+}
+footer ul li {
+    margin: 25px;
+    padding: 12px;
+    border: inset 3px rgb(89, 170, 89);
+    border-radius: 15px;
+    background-color: rgb(225, 235, 171);
+}
+footer ul li:hover {
+    background-color: rgb(208, 223, 126);
+}
+footer i {
+    font-size: 2em;
+}
+
+
+
+/*Estilos usados todo el documento */
+/* clase para centrar*/
+.centrado {
+    text-align: center;
+}
+/* clase para dar margen en eje Y */
+.margen {
+    margin: 30px 0 ;
+}
+/* elimino estilos a links */
+a {
+    text-decoration: none;
+    color: rgb(9, 66, 28);
+}
+/* sin estilos en listas */
+ul {
+    list-style-type: none;
+ }
+/* estilo para titulos */
+.titulos {
+    font-family: 'Macondo', cursive;
+    font-size: 30px;
+}
+
+
