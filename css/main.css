@@ -5,115 +5,135 @@
     box-sizing: border-box;
 }
 
+/* GRID 
+
+.contenedor {
+    display: grid;
+    grid-template-areas: "header header"
+                         "section-uno section-uno"
+                         "section-dos section-dos"
+                         "footer ";
+}
+
+.section-uno {
+    grid-area: section-uno;
+}
+
+.section-dos {
+    grid-area: section-dos;
+}
+*/ 
+
 /* ESTILOS DE HEADER */
 header {
-    background-color: rgb(225, 238, 155);
+    grid-area: header;
     border: solid 5px rgb(150, 106, 12);
-    margin: 0 0 0 6px;
-    background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
-    background-repeat: no-repeat;
-    text-align: center;
+    background-color: rgb(225, 238, 155);
+    /*background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
+    background-repeat: no-repeat;*/
 }
 header h1 {
-    margin: 15px;
+    padding: 1.2rem 0;
+    margin: 10px;
     color: rgb(112, 63, 27);
-    font-size: 50px;
+    font-size: 3em;
     font-family: 'Lobster', cursive;
 }
 header nav {
+    margin: 0.3em;
     font-family: 'Grape Nuts', cursive;
-    font-size: 20px;
+    font-size: 1.4em;
     font-weight: bold;
 }
 header nav ul li {
-    margin: 30px 0;
     padding: 5px;
-    border: outset 4px rgb(247, 197, 91);
-    border-radius: 10px;
 }
-.navegador-header {
+.header {
     display: flex;
-    justify-content: center;
-    column-gap: 3.6em;
-}
-header nav li:hover {
-    background-color: rgb(226, 192, 117);
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* ESTILOS DE MAINS*/
 
 main {
-    border-left: solid 5px rgb(150, 106, 12);
-    border-right: solid 5px rgb(150, 106, 12);
-    margin: 0 0 0 6px;
-    padding: 40px 0;
+    border: solid 5px rgb(150, 106, 12);
+    padding: 1.8em 0;
     background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/sun-pattern.png); 
 }
 .nosotros{
     font-family: 'Oswald', sans-serif;
     font-size: x-large;
+    margin: 0 2em;
+}
+.mardelplata {
+    width: 90%;
+    max-width: 600px;
+}
+.galeria-productos {
+    padding-left: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 .DescripcionProductos {
-    border: solid 2px rgb(150, 106, 12);
-    margin: 10px 0;
     padding: 5px;
-    font-size: 20px;
+    font-size: 1.5em;
     font-family: 'Smooch', cursive;
     font-weight: bold;
 }
 .productos {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(241, 248, 200);
     border: solid 4px rgb(150, 106, 12);
     border-radius: 4px;
-    height: 550px;
-    width: 500px;
+    width: 18em;
+    height: 28em;
 }
 .productos img {
-    height: 400px;
-    width: 300px;
+    border: solid 2px rgb(150, 106, 12);
+    height: 300px;
+    width: 90%;
 }
 .PreciosProductos {
-    border: solid 2px rgb(150, 106, 12);
-    margin: 10px 0;
     padding: 5px;
 }
-#imagen-Main-Clientes {
-    height: 400px;
-    width: 600px;
-}
+
  /*ESTILOS DE MAIN-PAGES*/
 
 /*ESTILOS FOOTER  */
 footer {
-    height: 150px;
+    grid-area: footer;
     border: solid 5px rgb(150, 106, 12);
-    margin: 0 0 0 6px;
     background-color: rgb(225, 238, 155);
-    background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
-    background-repeat: no-repeat;
-    background-position: right bottom;
 }
-footer ul {
+footer p {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(14, 85, 14);
+}
+.contactanos-footer {
     display: flex;
     justify-content: center;
-    column-gap: 3.6em;
+    align-items: center;
+    column-gap: 1.8em;
 }
-footer ul li {
-    margin: 25px;
-    padding: 12px;
+.redes {
+    padding: 0.8em;
+    margin: 1em;
     border: inset 3px rgb(89, 170, 89);
     border-radius: 15px;
     background-color: rgb(225, 235, 171);
 }
-footer ul li:hover {
-    background-color: rgb(208, 223, 126);
-}
 footer i {
     font-size: 2em;
 }
+
 
 
 
@@ -124,7 +144,7 @@ footer i {
 }
 /* clase para dar margen en eje Y */
 .margen {
-    margin: 30px 0 ;
+    margin: 22px 0;
 }
 /* elimino estilos a links */
 a {
@@ -137,8 +157,94 @@ ul {
  }
 /* estilo para titulos */
 .titulos {
+    margin: 2rem;
     font-family: 'Macondo', cursive;
     font-size: 30px;
 }
 
 
+/* MEDIA QUERIE MIN-600PX */
+
+@media screen and (min-width:768px) {
+    header {
+        background-color: red;
+    }
+    header h1 {
+        text-decoration: underline;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        width: 100%;
+    }
+    .navegador-header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contactanos-footer {
+        column-gap: 11em;
+        margin: 2em;
+    }
+}
+
+
+
+/* MEDIA QUERIE MIN-992PX */
+
+@media screen and (min-width:992px) {
+    header {
+        background-color: green;
+        padding-bottom: 1rem;
+    }
+    
+    footer {
+        background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    } 
+    header nav ul li {
+        margin-bottom: 0.6rem;
+        border: outset 4px rgb(247, 197, 91);
+        border-radius: 10px;
+    }
+    header nav ul li:hover {
+        background-color: rgb(226, 192, 117);
+    }
+
+
+
+
+
+
+
+
+
+/*
+    .contenedor {
+        grid-template-areas: "header header"
+                             "section-uno section-dos"
+                             "section-uno section-dos"
+                             "footer footer";
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+.section-uno p {
+    text-align: justify;
+}
+
+
+
+
+*/
