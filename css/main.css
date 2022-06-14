@@ -29,7 +29,6 @@ header nav {
 }
 header nav ul li {
     padding: 5px;
-    background-color: rgb(227, 245, 129);
 }
 .header {
     display: flex;
@@ -218,8 +217,9 @@ ul {
         margin-bottom: 0.6rem;
         border: outset 4px rgb(247, 197, 91);
         border-radius: 10px;
+        background-color: rgb(227, 245, 129);
     }
-
+    
     .redes:hover  {
         background-color: rgb(255, 214, 125);
     }
@@ -228,7 +228,7 @@ ul {
         background-color: rgb(255, 214, 125);
     }
 
-
+}
 
 
 
