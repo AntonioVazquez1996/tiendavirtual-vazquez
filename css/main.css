@@ -5,24 +5,6 @@
     box-sizing: border-box;
 }
 
-/* GRID 
-
-.contenedor {
-    display: grid;
-    grid-template-areas: "header header"
-                         "section-uno section-uno"
-                         "section-dos section-dos"
-                         "footer ";
-}
-
-.section-uno {
-    grid-area: section-uno;
-}
-
-.section-dos {
-    grid-area: section-dos;
-}
-*/ 
 
 /* ESTILOS DE HEADER */
 header {
@@ -47,6 +29,7 @@ header nav {
 }
 header nav ul li {
     padding: 5px;
+    background-color: rgb(227, 245, 129);
 }
 .header {
     display: flex;
@@ -58,17 +41,22 @@ header nav ul li {
 
 main {
     border: solid 5px rgb(150, 106, 12);
-    padding: 1.8em 0;
+    padding: 2em;
     background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/sun-pattern.png); 
 }
-.nosotros{
+
+.texto-main {
     font-family: 'Oswald', sans-serif;
     font-size: x-large;
     margin: 0 2em;
 }
-.mardelplata {
+.imagen-main-uno {
+    display: none;
+}
+.imagen-main-dos {
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
+    border-radius: 50%;
 }
 .galeria-productos {
     padding-left: 2em;
@@ -79,6 +67,7 @@ main {
     gap: 2em;
 }
 .DescripcionProductos {
+    min-height: 3em;
     padding: 5px;
     font-size: 1.5em;
     font-family: 'Smooch', cursive;
@@ -91,12 +80,13 @@ main {
     align-items: center;
     background-color: rgb(241, 248, 200);
     border: solid 4px rgb(150, 106, 12);
-    border-radius: 4px;
+    border-radius: 2em;
     width: 18em;
     height: 28em;
 }
 .productos img {
     border: solid 2px rgb(150, 106, 12);
+    border-radius: 1em;
     height: 300px;
     width: 90%;
 }
@@ -166,9 +156,7 @@ ul {
 /* MEDIA QUERIE MIN-600PX */
 
 @media screen and (min-width:768px) {
-    header {
-        background-color: red;
-    }
+
     header h1 {
         text-decoration: underline;
     }
@@ -183,6 +171,9 @@ ul {
         display: flex;
         justify-content: space-around;
     }
+    .imagen-main-dos {
+        border-radius: 3em;
+    }
     .contactanos-footer {
         column-gap: 11em;
         margin: 2em;
@@ -195,10 +186,29 @@ ul {
 
 @media screen and (min-width:992px) {
     header {
-        background-color: green;
         padding-bottom: 1rem;
     }
-    
+    .imagen-main-uno {
+        max-width: 25em;
+        max-height: 25em;
+        display: inline;
+        margin-left: 1em;
+        border-radius: 3em;
+    }
+
+    .nosotros {
+        text-align: justify;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .objetivos {
+        text-align: justify;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     footer {
         background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
         background-repeat: no-repeat;
@@ -209,6 +219,19 @@ ul {
         border: outset 4px rgb(247, 197, 91);
         border-radius: 10px;
     }
+
+
+
+    
+
+/*  CAMBIOS DE ANIMACIONES
+    
+    .redes:hover  {
+        background-color: rgb(226, 192, 117);
+
+    
+    }
+
     header nav ul li:hover {
         background-color: rgb(226, 192, 117);
     }
@@ -218,6 +241,63 @@ ul {
 
 
 
+
+
+    
+
+
+
+
+*/
+
+/* NO TENER EN CUENTA , PRACTICAS
+
+.contenedor {
+    display: grid;
+    grid-template-areas: "header header"
+                         "section-uno section-uno"
+                         "section-dos section-dos"
+                         "footer ";
+}
+
+.section-uno {
+    grid-area: section-uno;
+}
+
+.section-dos {
+    grid-area: section-dos;
+}
+*/ 
+
+
+
+
+
+    /*
+    .contenedorr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "main-titulo main-titulo"
+                             "articulo-uno articulo-dos"
+                             "articulo-uno articulo-dos";
+        align-items: ;
+    }
+    
+    .main-titulo {
+        grid-area: main-titulo;
+    }
+    
+    .articulo-uno {
+        grid-area: articulo-uno;
+    }
+    
+    .articulo-dos {
+        grid-area: articulo-dos;
+    }
+    .imagen-main-uno {
+        display: inline;
+    }*/
+    
 
 
 
@@ -232,11 +312,6 @@ ul {
 
 
 }
-
-
-
-
-
 
 
 
