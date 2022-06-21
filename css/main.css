@@ -27,9 +27,6 @@ header nav {
     font-size: 1.4em;
     font-weight: bold;
 }
-header nav ul li {
-    padding: 5px;
-}
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +43,7 @@ main {
 
 .texto-main {
     font-family: 'Oswald', sans-serif;
-    font-size: x-large;
+    font-size: 1.2em;
     margin: 0 2em;
 }
 .imagen-main-uno {
@@ -148,7 +145,7 @@ ul {
 .titulos {
     margin: 2rem;
     font-family: 'Macondo', cursive;
-    font-size: 30px;
+    font-size: 1.9rem;
 }
 
 
@@ -159,16 +156,15 @@ ul {
     header h1 {
         text-decoration: underline;
     }
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav {
-        width: 100%;
-    }
     .navegador-header {
         display: flex;
         justify-content: space-around;
+    }
+    .texto-main {
+        font-size: 1.4em;
+    }
+    .titulos {
+        font-size: 2.2rem;
     }
     .imagen-main-dos {
         border-radius: 3em;
@@ -187,12 +183,22 @@ ul {
     header {
         padding-bottom: 1rem;
     }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulos {
+        font-size: 2.4rem;
+    }
     .imagen-main-uno {
         max-width: 25em;
         max-height: 25em;
         display: inline;
         margin-left: 1em;
         border-radius: 3em;
+    }
+    .texto-main {
+        font-size: 1.6em;
     }
 
     .nosotros {
@@ -214,18 +220,23 @@ ul {
         background-position: right bottom;
     } 
     header nav ul li {
-        margin-bottom: 0.6rem;
         border: outset 4px rgb(247, 197, 91);
         border-radius: 10px;
         background-color: rgb(227, 245, 129);
+        
     }
-    
     .redes:hover  {
         background-color: rgb(255, 214, 125);
     }
+    footer i:hover {
+        color: rgb(95, 110, 41);
+
+    }
+    
 
     header nav ul li:hover {
         background-color: rgb(255, 214, 125);
+        color: black;
     }
 
 }
