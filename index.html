@@ -18,12 +18,21 @@
     <title>Tienda Luz de Sol - Inicio</title>
 </head>
 <body>
-    <div class="contenedor">
+    <div class="container">
         <!--Inicio Header-->
+<<<<<<< HEAD
         <header>
             <div class="header">
                 <!--Titulo de la Pagina-->
                 <h1 class="text-center"><i class="fa-solid fa-sun"></i>Luz de Sol</h1>
+=======
+        <header class="row text-center">
+            <div class="d-flex flex-column justify-content-center">
+                <!--LOGO-->
+                <div class="row">   
+                    <h1><i class="fa-solid fa-sun"></i>Luz de Sol</h1>
+                </div>
+>>>>>>> 8f95e7cde9b9a28a4145666f7b07f59c2ebc8657
                 <!--Navegador Principal-->
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
@@ -31,7 +40,11 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
+<<<<<<< HEAD
                             <ul class="navbar-nav navegador-header">
+=======
+                            <ul class="navbar-nav">
+>>>>>>> 8f95e7cde9b9a28a4145666f7b07f59c2ebc8657
                                 <li class="nav-item m-3">
                                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                                 </li>
@@ -52,56 +65,63 @@
                     </div>
                 </nav>
             </div>
+<<<<<<< HEAD
         </header>   
+=======
+
+
+        </header>
+>>>>>>> 8f95e7cde9b9a28a4145666f7b07f59c2ebc8657
         <!--Fin Header-->
 
         <!--Inicio Main-->
-        <main class="MainIndex">
+        <main class="row text-center">
             <!--Seccion Nosotros-->
-            <section class="centrado section-uno contenedorr">
-                <h2 class="titulos margen main-titulo"><u>Lema de Luz de Sol: Servicio y Calidad</u></h2>
-                <article class="articulo-uno">
-                    <h3 class="margen titulos"><u>Nosotros y Ustedes</u></h3>
-                    <div class="nosotros">
-                        <p class="texto-main">
+            <section class="">
+                <h2 class="m-2"><u>Lema de Luz de Sol: Servicio y Calidad</u></h2>
+                <article>
+                    <h3 class="m-2"><u>Nosotros y Ustedes</u></h3>
+                    <div class="d-md-flex align-items-center">
+                        <p class="m-5">
                             <i class="fa-solid fa-circle-check"></i> Somos una familia de raices Italianas donde prevalece ante todo el amor, el respeto por el otro, la solidaridad y la union. <br><br>
                             <i class="fa-solid fa-circle-check"></i> Nuestro emprendimiento si bien es crecer economicamente a traves de ustedes, deseamos que se unan y compartan nuestra pagina para realizar una buena eleccion de compra. <br><br>
                             <i class="fa-solid fa-circle-check"></i> Queremos brindarles lo mejor de nosotros y estar a su disposicion en nuestra pagina web. <br><br>
-                            <i class="fa-solid fa-circle-check"></i> Estamos radicados hace años en la ciudad de Mar del Plata, partido de General Pueyrredon, donde la moda formal e informal crece a pasos agigantados. <br><br> </p>
-                            <img src="Imagenes/tienda-online.jpg" alt="imagen referida a compras online" class="imagen-main-uno">
+                            <i class="fa-solid fa-circle-check"></i> Estamos radicados hace años en la ciudad de Mar del Plata, partido de General Pueyrredon, donde la moda formal e informal crece a pasos agigantados. <br><br>
+                        </p>
+                        <img src="Imagenes/tienda-online.jpg" alt="imagen referida a compras online" class="d-none d-md-inline img-thumbnail imagen-main-uno">
                     </div>
                 </article>
-                <article class="articulo-dos">
-                    <h3 class="margen titulos"><u>Objetivos</u></h3>
-                    <div class="objetivos">
-                        <p class="texto-main">
+                <article>
+                    <h3 class="m-5"><u>Objetivos</u></h3>
+                    <div class="d-md-flex align-items-center">
+                        <p class="m-4">
                             <i class="fa-solid fa-circle-check"></i> Expandirnos en nuestra ciudad;Mar del Plata, alrededores y todo el pais. <br><br>
                             <i class="fa-solid fa-circle-check"></i> Establecer una relacion comercial con nuestros clientes a traves del buen trato, amabilidad y dedicacion hacia ellos. <br><br>
                             <i class="fa-solid fa-circle-check"></i> Incorporar dia a dia el mundo de la moda actual a traves de nuestras ofertas y propuestas. <br><br>
                             <i class="fa-solid fa-circle-check"></i> Brindarles variedad, calidad y exclusividad en nuestras prendas. <br><br>
                             <i class="fa-solid fa-circle-check"></i> Comprender las necesidades de ustedes, para cubrir sus gustos y expectativas. <br><br>
-                            <i class="fa-solid fa-heart"></i> Agradecer por estar con <strong>Luz de Sol</strong>. <br><br>
+                            <i class="fa-solid fa-heart"></i> Agradecer por estar con <strong>Luz de Sol</strong> <br><br>
                         </p>
-                        <img src="Imagenes/MarDelPlata.jpg" alt="Imagen de un mapa de Arg con la ubicacion de nuestra ciudad, Mar del Plata" class="margen imagen-main-dos">
+                        <img src="Imagenes/MarDelPlata.jpg" alt="Imagen de un mapa de Arg con la ubicacion de nuestra ciudad, Mar del Plata" class="d-inline rounded m-3 imagen-main-dos">
                     </div>
                 </article>
             </section>
 
             <!--Seccion Ofertas-->
-            <section class="centrado section-dos">
-                <h2 class="margen titulos"><u>Ofertas</u></h2>
-                <div class="galeria-productos">
-                    <div class="productos"> 
+            <section>
+                <h2 class="m-5"><u>Ofertas</u></h2>
+                <div class="d-flex flex-column align-items-center flex-md-row justify-content-md-evenly m-1">
+                    <div class="productos m-4"> 
                         <p class="DescripcionProductos">Buzo de corderito C/cuello tejido en V.</p>
                         <img src="imagenes/buzo-corderito-cuello-tejido.jpg" alt="foto de Buzo de corderito C/cuello tejido en V">
                         <p class="PreciosProductos"><strong>$3000</strong></p>
                     </div>
-                    <div class="productos">
+                    <div class="productos m-4">
                         <p class="DescripcionProductos"> Joggin gris con bolsillos.</p>
                         <img src="imagenes/joggin-gris.jpg" alt="foto de Joggin gris con bolsillos">
                         <p class="PreciosProductos"><strong>$2000</strong></p>
                     </div>
-                    <div class="productos">
+                    <div class="productos m-4">
                         <p class="DescripcionProductos">Remera manga larga, de algodon con cuello forma camisa</p>
                         <img src="imagenes/remera-mangalarga-algodon-cuellocamisa.jpg" alt="foto de Remera manga larga, de algodon con cuello forma camisa">
                         <p class="PreciosProductos"><strong>$2700</strong></p>
@@ -112,19 +132,19 @@
         <!--Fin Main-->
                     
         <!--Inicio Footer-->
-        <footer>
-            <p class="titulos margen"><u>Contactenos:</u></p>
-            <div class="contactanos-footer">
+        <footer class="row">
+            <p ><u>Contactenos:</u></p>
+            <div class="d-flex justify-content-evenly justify-content-md-center">
 
-                <div class="redes">
+                <div class="redes m-md-5">
                     <a href="https://Facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 </div>
 
-                <div class="redes">
+                <div class="redes m-md-5">
                     <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
 
-                <div class="redes">
+                <div class="redes m-md-5">
                     <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
@@ -135,7 +155,10 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8f95e7cde9b9a28a4145666f7b07f59c2ebc8657
 </body>
 </html>

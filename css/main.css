@@ -47,13 +47,19 @@ main {
     margin: 0 2em;
 }
 .imagen-main-uno {
-    display: none;
+    max-width: 25em;
+    max-height: 25em;
 }
 .imagen-main-dos {
-    width: 90%;
-    max-width: 500px;
-    border-radius: 50%;
+    max-width: 25em;
+    max-height: 25em;
 }
+
+/*main section article img { 
+    width: 50%;
+    height: 200px;
+}*/
+
 .galeria-productos {
     padding-left: 2em;
     display: flex;
@@ -219,12 +225,18 @@ ul {
         background-repeat: no-repeat;
         background-position: right bottom;
     } 
+    /*
     header nav ul li {
         border: outset 4px rgb(247, 197, 91);
         border-radius: 10px;
         background-color: rgb(227, 245, 129);
+<<<<<<< HEAD
         
     }
+=======
+    }*/
+    
+>>>>>>> 8f95e7cde9b9a28a4145666f7b07f59c2ebc8657
     .redes:hover  {
         background-color: rgb(255, 214, 125);
     }
