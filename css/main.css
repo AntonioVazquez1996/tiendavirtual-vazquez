@@ -11,8 +11,6 @@ header {
     grid-area: header;
     border: solid 5px rgb(150, 106, 12);
     background-color: rgb(225, 238, 155);
-    /*background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
-    background-repeat: no-repeat;*/
 }
 header h1 {
     padding: 1.2rem 0;
@@ -34,13 +32,11 @@ header nav {
 }
 
 /* ESTILOS DE MAINS*/
-
 main {
     border: solid 5px rgb(150, 106, 12);
     padding: 2em;
     background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/sun-pattern.png); 
 }
-
 .texto-main {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
@@ -53,13 +49,8 @@ main {
 .imagen-main-dos {
     max-width: 25em;
     max-height: 25em;
+    border-radius: 16em;
 }
-
-/*main section article img { 
-    width: 50%;
-    height: 200px;
-}*/
-
 .galeria-productos {
     padding-left: 2em;
     display: flex;
@@ -173,11 +164,27 @@ ul {
         font-size: 2.2rem;
     }
     .imagen-main-dos {
-        border-radius: 3em;
+        border-radius: 3.2em;
     }
     .contactanos-footer {
         column-gap: 11em;
         margin: 2em;
+    }
+    header nav ul li {
+        border: outset 4px rgb(247, 197, 91);
+        border-radius: 10px;
+        background-color: rgb(227, 245, 129);
+    }
+    header nav ul li:hover {
+        background-color: rgb(255, 214, 125);
+        color: black;
+    }
+    .redes:hover  {
+        background-color: rgb(255, 214, 125);
+    }
+    footer i:hover {
+        color: rgb(95, 110, 41);
+
     }
 }
 
@@ -206,7 +213,6 @@ ul {
     .texto-main {
         font-size: 1.6em;
     }
-
     .nosotros {
         text-align: justify;
         display: flex;
@@ -225,32 +231,6 @@ ul {
         background-repeat: no-repeat;
         background-position: right bottom;
     } 
-    /*
-    header nav ul li {
-        border: outset 4px rgb(247, 197, 91);
-        border-radius: 10px;
-        background-color: rgb(227, 245, 129);
-<<<<<<< HEAD
-        
-    }
-=======
-    }*/
-    
->>>>>>> 8f95e7cde9b9a28a4145666f7b07f59c2ebc8657
-    .redes:hover  {
-        background-color: rgb(255, 214, 125);
-    }
-    footer i:hover {
-        color: rgb(95, 110, 41);
-
-    }
-    
-
-    header nav ul li:hover {
-        background-color: rgb(255, 214, 125);
-        color: black;
-    }
-
 }
 
 
@@ -263,7 +243,8 @@ ul {
 
 
 
-*/
+
+
 
 /* NO TENER EN CUENTA , PRACTICAS
 
